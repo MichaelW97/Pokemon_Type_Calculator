@@ -1,0 +1,9 @@
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\obj\Debug\TypingLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\bin\Debug\TypingLibrary.dll
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\bin\Debug\TypingLibrary.pdb
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\obj\Debug\TypingLibrary.dll
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary1\obj\Debug\TypingLibrary.pdb

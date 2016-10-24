@@ -1,0 +1,5 @@
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ALibrary.csprojResolveAssemblyReference.cache
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
