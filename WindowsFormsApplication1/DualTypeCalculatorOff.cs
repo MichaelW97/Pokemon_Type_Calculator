@@ -11,6 +11,10 @@ using System.Windows.Forms;
 namespace WindowsFormsApplication1 {
     public partial class DualTypeCalculatorOff : Form {
 
+        /// <summary>
+        /// assings values to labels as need be.
+        /// no need to calculate dual typing as they are displayed diferently
+        /// </summary>
         public void displayTypeOutcome() {
             #region assigning values to text boxes
             label19.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[0].ToString();
@@ -51,12 +55,13 @@ namespace WindowsFormsApplication1 {
             label57.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[16].ToString();
             label58.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[17].ToString();
             #endregion
-           
         }
 
+        /// <summary>
+        /// gives the two combo boxes values and the labels names
+        /// </summary>
         public DualTypeCalculatorOff() {
             InitializeComponent();
-            //enbles valus for combo boxes
             typeOneComboBox.DataSource = Enum.GetValues(typeof(Typess.TypeStats.AllTypes));
             typeTwoComboBox.DataSource = Enum.GetValues(typeof(Typess.TypeStats.AllTypes));
             #region assigning values for table labels
@@ -81,22 +86,12 @@ namespace WindowsFormsApplication1 {
             #endregion
         }
 
-        private void label39_Click(object sender, EventArgs e) {
-
-        }
-
-        private void DualTypeCalculatorOff_Load(object sender, EventArgs e) {
-
-        }
-
-        private void typeOneComboBox_SelectedIndexChanged(object sender, EventArgs e) {
-
-        }
-
-        private void typeTwoComboBox_SelectedIndexChanged(object sender, EventArgs e) {
-
-        }
-
+        /// <summary>
+        /// calls method for disaplying outcome then assigns score value.
+        /// makes all the labels visible after to make it look nicer when changing.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void cakcButton_Click(object sender, EventArgs e) {
             displayTypeOutcome();
             label38.Text = Typess.TypeFunctions.DualTypeScoreOff(Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)).ToString();
@@ -141,8 +136,23 @@ namespace WindowsFormsApplication1 {
             #endregion
         }
 
+        #region annoying things i clicked on and now cant get rid of
         private void label38_Click(object sender, EventArgs e) {
 
         }
+        private void typeTwoComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+        private void typeOneComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+        private void DualTypeCalculatorOff_Load(object sender, EventArgs e) {
+
+        }
+        private void label39_Click(object sender, EventArgs e) {
+
+        }
+        #endregion
+
     }
 }
