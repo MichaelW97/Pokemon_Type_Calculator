@@ -2,8 +2,11 @@
 A tool to help trainers find type matchings/dual types/team compositions.
 
 Completed:
+
     Defensive dual type calculator
+    
     Offensive dual type calculator
+    
 
 Needs improving:
     Offensive score needs more meaning
