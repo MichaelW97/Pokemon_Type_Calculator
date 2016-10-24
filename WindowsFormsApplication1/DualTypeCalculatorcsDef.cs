@@ -7,12 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Typess;
-using TypeList;
-using WindowsFormsApplication1;
 
 namespace WindowsFormsApplication1 {
+    /// <summary>
+    /// working fine for now. no need to change anythig unless stuff in the back end changes
+    /// </summary>
     public partial class DualTypeCalculatorcsDef : Form {
+        /// <summary>
+        /// displays outcome of tyype combom.
+        /// creates array that it sets to the result of the two combo boxes.
+        /// updates labels based off array
+        /// </summary>
         public void displayTypeOutcome() {
             double[] aVal = Typess.TypeFunctions.DualType(Typess.TypeFunctions.StringToTypeDef(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeDef(typeTwoComboBox.SelectedIndex));
             #region setting label names
@@ -37,10 +42,11 @@ namespace WindowsFormsApplication1 {
             #endregion
         }
         
-
+        /// <summary>
+        /// gives the two combo boxes values and the labels names
+        /// </summary>
         public DualTypeCalculatorcsDef() {
             InitializeComponent();
-            //enbles valus for combo boxes
             typeOneComboBox.DataSource = Enum.GetValues(typeof(Typess.TypeStats.AllTypes));
             typeTwoComboBox.DataSource = Enum.GetValues(typeof(Typess.TypeStats.AllTypes));
             #region assigning values for table labels
@@ -65,7 +71,12 @@ namespace WindowsFormsApplication1 {
             #endregion
         }
 
-       
+       /// <summary>
+       /// calls method for disaplying outcome then assigns score value.
+       /// makes all the labels visible after to make it look nicer when changing.
+       /// </summary>
+       /// <param name="sender"></param>
+       /// <param name="e"></param>
         private void cakcButton_Click(object sender, EventArgs e) {
             displayTypeOutcome();
             label38.Text = Typess.TypeFunctions.DualTypeScoreDef(Typess.TypeFunctions.StringToTypeDef(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeDef(typeTwoComboBox.SelectedIndex)).ToString();
@@ -92,6 +103,7 @@ namespace WindowsFormsApplication1 {
             #endregion
         }
 
+        #region annoying things i clicked on and now cant get rid of
         private void typeTwoComboBox_SelectedIndexChanged(object sender, EventArgs e) {
 
         }
@@ -103,5 +115,7 @@ namespace WindowsFormsApplication1 {
         private void label39_Click(object sender, EventArgs e) {
 
         }
+        #endregion
+
     }
 }

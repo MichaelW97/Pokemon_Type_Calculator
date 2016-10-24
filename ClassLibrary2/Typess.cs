@@ -7,6 +7,10 @@ using TypeList;
 using Typess;
 
 namespace Typess {
+    /// <summary>
+    /// sort of failed in implimenting this the way i wanted. a few things depend on this and more will int eh future.
+    /// may try to fix it some time
+    /// </summary>
     public class TypeStats {
 
         /*
@@ -14,6 +18,7 @@ namespace Typess {
          * 
          */
 
+        #region didn't get this working the way i wanted, ignore
         /// defining variable etc
 
         //intiating arrays for defesive/offensive
@@ -26,10 +31,11 @@ namespace Typess {
         }
 
 
-       // public TypeStats (double[] iOff, double[] iDef) {
-  //          Defensive = iDef; //{ get; set; }
-   //         Offensive = iOff; //{ get; set; }
-  //      }
+        // public TypeStats (double[] iOff, double[] iDef) {
+        //          Defensive = iDef; //{ get; set; }
+        //         Offensive = iOff; //{ get; set; }
+        //      }
+        #endregion
 
         //All types for defintions in implementations
         public enum AllTypes { NORMAL, FIRE, WATER, ELECTIC, GRASS, ICE, FIGHTING, POISON, GROUND, FLYING, PSYCHIC, BUG, ROCK, GHOST, DRAGON, DARK, STEEL, FAIRY, NULL };
@@ -40,49 +46,23 @@ namespace Typess {
         public static double NONEFFECTIVE = 0.5;
         public static double NOEFFECTIVE = 0;
 
-        /*
-        public static double[] ChangeDef(double[] array) {
-            Defensive = array;
-            return array;
-        }
-        public static double[] ChangeOff(double[] array) {
-            Offensive = array;
-            return array;
-        }
-        */
-    }
+        ///more will be added as more thigns need to be set etc
+        
+    }//end TypeStats class
 
+     /// <summary>
+     /// provides functionality to a lot of forms.
+     /// more will be added as needed.
+     /// all static to be able to use with instination
+     /// </summary>
     public class TypeFunctions {
         /*
          *  created 19/10/2016
          * 
          */
-        /*
-       public void labeltypes() {
-           #region assigning values for table labels
-           label1.Text = Typess.TypeStats.AllTypes.NORMAL.ToString();
-           label2.Text = Typess.TypeStats.AllTypes.FIRE.ToString();
-           label3.Text = Typess.TypeStats.AllTypes.WATER.ToString();
-           label4.Text = Typess.TypeStats.AllTypes.ELECTIC.ToString();
-           label5.Text = Typess.TypeStats.AllTypes.GRASS.ToString();
-           label6.Text = Typess.TypeStats.AllTypes.ICE.ToString();
-           label7.Text = Typess.TypeStats.AllTypes.FIGHTING.ToString();
-           label8.Text = Typess.TypeStats.AllTypes.POISON.ToString();
-           label9.Text = Typess.TypeStats.AllTypes.GROUND.ToString();
-           label10.Text = Typess.TypeStats.AllTypes.FLYING.ToString();
-           label11.Text = Typess.TypeStats.AllTypes.PSYCHIC.ToString();
-           label12.Text = Typess.TypeStats.AllTypes.BUG.ToString();
-           label13.Text = Typess.TypeStats.AllTypes.ROCK.ToString();
-           label14.Text = Typess.TypeStats.AllTypes.GHOST.ToString();
-           label15.Text = Typess.TypeStats.AllTypes.DRAGON.ToString();
-           label16.Text = Typess.TypeStats.AllTypes.DARK.ToString();
-           label17.Text = Typess.TypeStats.AllTypes.STEEL.ToString();
-           label18.Text = Typess.TypeStats.AllTypes.FAIRY.ToString();
-           #endregion
-       }
-       */
 
-
+        //assinging magic numbers
+        public static int lenghtOfArray = 17;
 
         /// <summary>
         /// inputs two types then returns the final type
@@ -93,12 +73,12 @@ namespace Typess {
         public static double[] DualType(double[] typeOne, double[] typeTwo) {
             double[] finalType = new double[typeOne.Length];
 
-            for (int i = 17; 0 <= i; i--) {
+            for (int i = lenghtOfArray; 0 <= i; i--) {
                 finalType[i] = typeOne[i] * typeTwo[i];
             }
 
             return finalType;
-        }
+        }// end DualType
 
         /// <summary>
         /// converts a string input to the type array (defensive)
@@ -150,8 +130,13 @@ namespace Typess {
                     #endregion
             }
             return empty;
-        }
+        }//end StringToTypeDef
 
+        /// <summary>
+        /// converts a string input to the type array (offensive)
+        /// </summary>
+        /// <param name="iint"></param>
+        /// <returns></returns>
         public static double[] StringToTypeOff(int iint) {
             double[] empty = new double[0];
             switch (iint) {
@@ -197,13 +182,26 @@ namespace Typess {
                     #endregion
             }
             return empty;
-        }
+        }//end StringToTypeOff
 
+        /// <summary>
+        /// return a score for dual typing (defensive)
+        /// </summary>
+        /// <param name="typeOne"></param>
+        /// <param name="typeTwo"></param>
+        /// <returns></returns>
         public static double DualTypeScoreDef(double[] typeOne, double[] typeTwo) {
             double[] resultType = Typess.TypeFunctions.DualType(typeOne, typeTwo);
             return resultType.Sum();
-        }
+        }//end DualTypeScoreDef
 
+        /// <summary>
+        /// return a score for dual typing (offensive)
+        /// not yet completed, needs more meanign
+        /// </summary>
+        /// <param name="typeOne"></param>
+        /// <param name="typeTwo"></param>
+        /// <returns></returns>
         public static double DualTypeScoreOff(double[] typeOne, double[] typeTwo) {
             double[] resultType = Typess.TypeFunctions.DualType(typeOne, typeTwo);
             foreach (double i in resultType) {
@@ -218,24 +216,6 @@ namespace Typess {
                 }
             }
             return resultType.Sum();
-        }
-
-            /*
-            double[] resultType = Typess.TypeFunctions.DualType(typeOne, typeTwo);
-            foreach (double i in resultType) {
-                double j = i;
-                if (j == 4) {
-                    j = 2;
-                }
-                if (j == 0.25) {
-                    j = 0;
-                }
-                if (j == 0.5) {
-                    j = 1;
-                }
-                
-            }
-            return resultType.Sum();
-            */
-    }
+        }// end DualTypeScoreOff
+    }//end TypeFunctions class
 }

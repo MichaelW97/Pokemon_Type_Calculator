@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 using Typess;
 
 namespace TypeList {
-
+    /// <summary>
+    /// this space is defining the literal value for the types.
+    /// not entirly happy with this but its working so its fine.
+    /// i would have liked if the classes inherited TypesStats and would be able to call Normal.Defensive ...
+    /// that would then return the correct array.
+    /// </summary>
     #region defining types with arrays
     public class Normal {
         /////////////////////////////////////////////////////////1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18
@@ -231,4 +236,5 @@ namespace TypeList {
 
     }
     #endregion
+    //type Null is for when no second type is wanted
 }
