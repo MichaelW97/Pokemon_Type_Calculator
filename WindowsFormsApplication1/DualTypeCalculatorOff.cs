@@ -1,0 +1,148 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1 {
+    public partial class DualTypeCalculatorOff : Form {
+
+        public void displayTypeOutcome() {
+            #region assigning values to text boxes
+            label19.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[0].ToString();
+            label20.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[1].ToString();
+            label21.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[2].ToString();
+            label22.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[3].ToString();
+            label23.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[4].ToString();
+            label24.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[5].ToString();
+            label25.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[6].ToString();
+            label26.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[7].ToString();
+            label27.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[8].ToString();
+            label28.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[9].ToString();
+            label29.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[10].ToString();
+            label30.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[11].ToString();
+            label31.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[12].ToString();
+            label32.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[13].ToString();
+            label33.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[14].ToString();
+            label34.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[15].ToString();
+            label35.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[16].ToString();
+            label36.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[17].ToString();
+
+            label41.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[0].ToString();
+            label42.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[1].ToString();
+            label43.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[2].ToString();
+            label44.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[3].ToString();
+            label45.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[4].ToString();
+            label46.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[5].ToString();
+            label47.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[6].ToString();
+            label48.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[7].ToString();
+            label49.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[8].ToString();
+            label50.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[9].ToString();
+            label51.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[10].ToString();
+            label52.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[11].ToString();
+            label53.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[12].ToString();
+            label54.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[13].ToString();
+            label55.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[14].ToString();
+            label56.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[15].ToString();
+            label57.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[16].ToString();
+            label58.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[17].ToString();
+            #endregion
+           
+        }
+
+        public DualTypeCalculatorOff() {
+            InitializeComponent();
+            //enbles valus for combo boxes
+            typeOneComboBox.DataSource = Enum.GetValues(typeof(Typess.TypeStats.AllTypes));
+            typeTwoComboBox.DataSource = Enum.GetValues(typeof(Typess.TypeStats.AllTypes));
+            #region assigning values for table labels
+            label1.Text = Typess.TypeStats.AllTypes.NORMAL.ToString();
+            label2.Text = Typess.TypeStats.AllTypes.FIRE.ToString();
+            label3.Text = Typess.TypeStats.AllTypes.WATER.ToString();
+            label4.Text = Typess.TypeStats.AllTypes.ELECTIC.ToString();
+            label5.Text = Typess.TypeStats.AllTypes.GRASS.ToString();
+            label6.Text = Typess.TypeStats.AllTypes.ICE.ToString();
+            label7.Text = Typess.TypeStats.AllTypes.FIGHTING.ToString();
+            label8.Text = Typess.TypeStats.AllTypes.POISON.ToString();
+            label9.Text = Typess.TypeStats.AllTypes.GROUND.ToString();
+            label10.Text = Typess.TypeStats.AllTypes.FLYING.ToString();
+            label11.Text = Typess.TypeStats.AllTypes.PSYCHIC.ToString();
+            label12.Text = Typess.TypeStats.AllTypes.BUG.ToString();
+            label13.Text = Typess.TypeStats.AllTypes.ROCK.ToString();
+            label14.Text = Typess.TypeStats.AllTypes.GHOST.ToString();
+            label15.Text = Typess.TypeStats.AllTypes.DRAGON.ToString();
+            label16.Text = Typess.TypeStats.AllTypes.DARK.ToString();
+            label17.Text = Typess.TypeStats.AllTypes.STEEL.ToString();
+            label18.Text = Typess.TypeStats.AllTypes.FAIRY.ToString();
+            #endregion
+        }
+
+        private void label39_Click(object sender, EventArgs e) {
+
+        }
+
+        private void DualTypeCalculatorOff_Load(object sender, EventArgs e) {
+
+        }
+
+        private void typeOneComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+
+        private void typeTwoComboBox_SelectedIndexChanged(object sender, EventArgs e) {
+
+        }
+
+        private void cakcButton_Click(object sender, EventArgs e) {
+            displayTypeOutcome();
+            label38.Text = Typess.TypeFunctions.DualTypeScoreOff(Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)).ToString();
+            #region displaying text labels
+            label19.Visible = true;
+            label20.Visible = true;
+            label21.Visible = true;
+            label22.Visible = true;
+            label23.Visible = true;
+            label24.Visible = true;
+            label25.Visible = true;
+            label26.Visible = true;
+            label27.Visible = true;
+            label28.Visible = true;
+            label29.Visible = true;
+            label30.Visible = true;
+            label31.Visible = true;
+            label32.Visible = true;
+            label33.Visible = true;
+            label34.Visible = true;
+            label35.Visible = true;
+            label36.Visible = true;
+            label38.Visible = true;
+            label41.Visible = true;
+            label42.Visible = true;
+            label43.Visible = true;
+            label44.Visible = true;
+            label45.Visible = true;
+            label46.Visible = true;
+            label47.Visible = true;
+            label48.Visible = true;
+            label49.Visible = true;
+            label50.Visible = true;
+            label51.Visible = true;
+            label52.Visible = true;
+            label53.Visible = true;
+            label54.Visible = true;
+            label55.Visible = true;
+            label56.Visible = true;
+            label57.Visible = true;
+            label58.Visible = true;
+            #endregion
+        }
+
+        private void label38_Click(object sender, EventArgs e) {
+
+        }
+    }
+}

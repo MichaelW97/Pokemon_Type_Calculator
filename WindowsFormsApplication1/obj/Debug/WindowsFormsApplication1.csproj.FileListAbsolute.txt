@@ -1,0 +1,10 @@
+c:\users\michael\documents\visual studio 2015\Projects\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Splash_Page.resources
