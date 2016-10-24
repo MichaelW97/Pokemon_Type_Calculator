@@ -9,10 +9,12 @@ Completed:
     
 
 Needs improving:
+
     Offensive score needs more meaning
     More in-code notes
     Clean up + Qoc
     UI (I don't know good UI)
+    
 
 Needs to be done:
     Form + functionality for:
