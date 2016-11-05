@@ -2,7 +2,7 @@
 A tool to help trainers find type matchings/dual types/team compositions.
 
 Installation.
-The files here are the source code from the C# auto-made files in the project folder. To execute you'll need to either complile the source code yourself (hard), run it with Visual Studio(ease) or run WindowsFormsApplication1.exe in WindowsFormsApplicaiton1/bin/Debug(easiest).
+The files here are the source code from the visual studio project folder. To execute you'll need to either complile the source code yourself (hard), run it with Visual Studio(ease) or run WindowsFormsApplication1.exe in WindowsFormsApplicaiton1/bin/Debug(easiest).
 
 Contact and Constribure
 To contact or contribute PM /u/siminerd on reddit or Email: thesiminerd@gmail.com (with an appropriate title or I might miss it)
