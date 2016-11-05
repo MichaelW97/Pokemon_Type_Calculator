@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1 {
         /// updates labels based off array
         /// </summary>
         public void displayTypeOutcome() {
-            double[] aVal = Typess.TypeFunctions.DualType(Typess.TypeFunctions.StringToTypeDef(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeDef(typeTwoComboBox.SelectedIndex));
+            double[] aVal = Typess.TypeFunctions.DualTypeDef(Typess.TypeFunctions.StringToTypeDef(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeDef(typeTwoComboBox.SelectedIndex));
             #region setting label names
             label19.Text = aVal[0].ToString();
             label20.Text = aVal[1].ToString();

@@ -127,7 +127,7 @@ namespace TypeList {
         public static double[] FlyiArrayOff = new double[18] { b, b, b, c, a, b, a, b, b, b, b, a, c, b, b, b, c, b };
 
     }
-    public class Psychih { 
+    public class Psychic { 
 
         static double a = 2;
         static double b = 1;

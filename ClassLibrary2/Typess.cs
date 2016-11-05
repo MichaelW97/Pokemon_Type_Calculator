@@ -65,12 +65,12 @@ namespace Typess {
         public static int lenghtOfArray = 17;
 
         /// <summary>
-        /// inputs two types then returns the final type
+        /// inputs two types then returns the final type (defensive)
         /// </summary>
         /// <param name="typeOne"></param>
         /// <param name="typeTwo"></param>
         /// <returns></returns>
-        public static double[] DualType(double[] typeOne, double[] typeTwo) {
+        public static double[] DualTypeDef(double[] typeOne, double[] typeTwo) {
             double[] finalType = new double[typeOne.Length];
 
             for (int i = lenghtOfArray; 0 <= i; i--) {
@@ -79,6 +79,20 @@ namespace Typess {
 
             return finalType;
         }// end DualType
+
+        /// <summary>
+        /// inputs two types the reutns final type (offensive)
+        /// </summary>
+        /// <param name="typeOne"></param>
+        /// <param name="typeTwo"></param>
+        /// <returns></returns>
+        public static double[] DualTypeOff(double[] typeOne, double[] typeTwo) {
+            double[] resultTypes = new double[typeOne.Length];
+            for (int i = 0; i < typeOne.Length; i++) {
+                resultTypes[i] = Math.Max(typeOne[i], typeTwo[i]);
+            }
+            return resultTypes;
+        }
 
         /// <summary>
         /// converts a string input to the type array (defensive)
@@ -110,7 +124,7 @@ namespace Typess {
                 case 9:
                     return Flying.FlyiArrayDef;
                 case 10:
-                    return Psychih.PsycArrayDef;
+                    return Psychic.PsycArrayDef;
                 case 11:
                     return Bug.BuggArrayDef;
                 case 12:
@@ -162,7 +176,7 @@ namespace Typess {
                 case 9:
                     return Flying.FlyiArrayOff;
                 case 10:
-                    return Psychih.PsycArrayOff;
+                    return Psychic.PsycArrayOff;
                 case 11:
                     return Bug.BuggArrayOff;
                 case 12:
@@ -191,31 +205,22 @@ namespace Typess {
         /// <param name="typeTwo"></param>
         /// <returns></returns>
         public static double DualTypeScoreDef(double[] typeOne, double[] typeTwo) {
-            double[] resultType = Typess.TypeFunctions.DualType(typeOne, typeTwo);
-            return resultType.Sum();
+            double[] resultType = Typess.TypeFunctions.DualTypeDef(typeOne, typeTwo);
+            return resultType.Sum() - 13.25;
         }//end DualTypeScoreDef
 
         /// <summary>
         /// return a score for dual typing (offensive)
-        /// not yet completed, needs more meanign
         /// </summary>
         /// <param name="typeOne"></param>
         /// <param name="typeTwo"></param>
         /// <returns></returns>
         public static double DualTypeScoreOff(double[] typeOne, double[] typeTwo) {
-            double[] resultType = Typess.TypeFunctions.DualType(typeOne, typeTwo);
-            foreach (double i in resultType) {
-                if (resultType[0] == 4) {
-                    resultType[0] = 2;
-                }
-                if (resultType[0] == 0.25) {
-                    resultType[0] = 0;
-                }
-                if (resultType[0] == 0.5) {
-                    resultType[0] = 1;
-                }
+            double[] resultTypes = new double[typeOne.Length];
+            for (int i = 0; i < typeOne.Length; i++) {
+                resultTypes[i] = Math.Max(typeOne[i], typeTwo[i]);
             }
-            return resultType.Sum();
+            return resultTypes.Sum();
         }// end DualTypeScoreOff
     }//end TypeFunctions class
 }

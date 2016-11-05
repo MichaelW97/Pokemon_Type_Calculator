@@ -16,6 +16,7 @@ namespace WindowsFormsApplication1 {
         /// no need to calculate dual typing as they are displayed diferently
         /// </summary>
         public void displayTypeOutcome() {
+            double[] combotype = Typess.TypeFunctions.DualTypeOff(Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex));
             #region assigning values to text boxes
             label19.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[0].ToString();
             label20.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[1].ToString();
@@ -54,6 +55,24 @@ namespace WindowsFormsApplication1 {
             label56.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[15].ToString();
             label57.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[16].ToString();
             label58.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[17].ToString();
+            label61.Text = combotype[0].ToString();
+            label62.Text = combotype[1].ToString();
+            label63.Text = combotype[2].ToString();
+            label64.Text = combotype[3].ToString();
+            label65.Text = combotype[4].ToString();
+            label66.Text = combotype[5].ToString();
+            label67.Text = combotype[6].ToString();
+            label68.Text = combotype[7].ToString();
+            label69.Text = combotype[8].ToString();
+            label70.Text = combotype[9].ToString();
+            label71.Text = combotype[10].ToString();
+            label72.Text = combotype[11].ToString();
+            label73.Text = combotype[12].ToString();
+            label74.Text = combotype[13].ToString();
+            label75.Text = combotype[14].ToString();
+            label76.Text = combotype[15].ToString();
+            label77.Text = combotype[16].ToString();
+            label78.Text = combotype[17].ToString();
             #endregion
         }
 
@@ -133,6 +152,25 @@ namespace WindowsFormsApplication1 {
             label56.Visible = true;
             label57.Visible = true;
             label58.Visible = true;
+            label61.Visible = true;
+            label62.Visible = true;
+            label63.Visible = true;
+            label64.Visible = true;
+            label65.Visible = true;
+            label66.Visible = true;
+            label67.Visible = true;
+            label68.Visible = true;
+            label69.Visible = true;
+            label70.Visible = true;
+            label71.Visible = true;
+            label72.Visible = true;
+            label73.Visible = true;
+            label74.Visible = true;
+            label75.Visible = true;
+            label76.Visible = true;
+            label77.Visible = true;
+            label78.Visible = true;
+            label58.Visible = true;
             #endregion
         }
 
@@ -154,5 +192,8 @@ namespace WindowsFormsApplication1 {
         }
         #endregion
 
+        private void label79_Click(object sender, EventArgs e) {
+
+        }
     }
 }
