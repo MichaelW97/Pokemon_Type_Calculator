@@ -42,5 +42,12 @@ namespace WindowsFormsApplication1 {
         }
         #endregion
 
+        private void aboutLabel_Click(object sender, EventArgs e) {
+            System.Diagnostics.Process.Start("https://github.com/MichaelW97/Pokemon_Type_Calculator/wiki");
+        }
+
+        private void contributeLabel_Click(object sender, EventArgs e) {
+            System.Diagnostics.Process.Start("https://github.com/MichaelW97/Pokemon_Type_Calculator");
+        }
     }
 }

@@ -3,3 +3,8 @@ C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassL
 C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ObjectsLibrary.csprojResolveAssemblyReference.cache
 C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ClassLibrary2.dll
 C:\Users\micha\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\bin\Debug\ClassLibrary2.dll
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\bin\Debug\ClassLibrary2.pdb
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ObjectsLibrary.csprojResolveAssemblyReference.cache
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ClassLibrary2.dll
+C:\Users\Michael\OneDrive\personal projects\poketypeprogram\poketypeproject\ClassLibrary2\obj\Debug\ClassLibrary2.pdb
