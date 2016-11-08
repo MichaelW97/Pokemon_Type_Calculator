@@ -16,45 +16,45 @@ namespace WindowsFormsApplication1 {
         /// no need to calculate dual typing as they are displayed diferently
         /// </summary>
         public void displayTypeOutcome() {
-            double[] combotype = Typess.TypeFunctions.DualTypeOff(Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex));
+            double[] combotype = Typess.TypeFunctions.DualTypeOff(Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off"), Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off"));
             #region assigning values to text boxes
-            label19.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[0].ToString();
-            label20.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[1].ToString();
-            label21.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[2].ToString();
-            label22.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[3].ToString();
-            label23.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[4].ToString();
-            label24.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[5].ToString();
-            label25.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[6].ToString();
-            label26.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[7].ToString();
-            label27.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[8].ToString();
-            label28.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[9].ToString();
-            label29.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[10].ToString();
-            label30.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[11].ToString();
-            label31.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[12].ToString();
-            label32.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[13].ToString();
-            label33.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[14].ToString();
-            label34.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[15].ToString();
-            label35.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[16].ToString();
-            label36.Text = Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex)[17].ToString();
+            label19.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[0].ToString();
+            label20.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[1].ToString();
+            label21.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[2].ToString();
+            label22.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[3].ToString();
+            label23.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[4].ToString();
+            label24.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[5].ToString();
+            label25.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[6].ToString();
+            label26.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[7].ToString();
+            label27.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[8].ToString();
+            label28.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[9].ToString();
+            label29.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[10].ToString();
+            label30.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[11].ToString();
+            label31.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[12].ToString();
+            label32.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[13].ToString();
+            label33.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[14].ToString();
+            label34.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[15].ToString();
+            label35.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[16].ToString();
+            label36.Text = Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off")[17].ToString();
 
-            label41.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[0].ToString();
-            label42.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[1].ToString();
-            label43.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[2].ToString();
-            label44.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[3].ToString();
-            label45.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[4].ToString();
-            label46.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[5].ToString();
-            label47.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[6].ToString();
-            label48.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[7].ToString();
-            label49.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[8].ToString();
-            label50.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[9].ToString();
-            label51.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[10].ToString();
-            label52.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[11].ToString();
-            label53.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[12].ToString();
-            label54.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[13].ToString();
-            label55.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[14].ToString();
-            label56.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[15].ToString();
-            label57.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[16].ToString();
-            label58.Text = Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)[17].ToString();
+            label41.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[0].ToString();
+            label42.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[1].ToString();
+            label43.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[2].ToString();
+            label44.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[3].ToString();
+            label45.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[4].ToString();
+            label46.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[5].ToString();
+            label47.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[6].ToString();
+            label48.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[7].ToString();
+            label49.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[8].ToString();
+            label50.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[9].ToString();
+            label51.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[10].ToString();
+            label52.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[11].ToString();
+            label53.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[12].ToString();
+            label54.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[13].ToString();
+            label55.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[14].ToString();
+            label56.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[15].ToString();
+            label57.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[16].ToString();
+            label58.Text = Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")[17].ToString();
             label61.Text = combotype[0].ToString();
             label62.Text = combotype[1].ToString();
             label63.Text = combotype[2].ToString();
@@ -113,7 +113,7 @@ namespace WindowsFormsApplication1 {
         /// <param name="e"></param>
         private void cakcButton_Click(object sender, EventArgs e) {
             displayTypeOutcome();
-            label38.Text = Typess.TypeFunctions.DualTypeScoreOff(Typess.TypeFunctions.StringToTypeOff(typeOneComboBox.SelectedIndex), Typess.TypeFunctions.StringToTypeOff(typeTwoComboBox.SelectedIndex)).ToString();
+            label38.Text = Typess.TypeFunctions.DualTypeScoreOff(Typess.TypeFunctions.StringToType(typeOneComboBox.SelectedIndex, "off"), Typess.TypeFunctions.StringToType(typeTwoComboBox.SelectedIndex, "off")).ToString();
             #region displaying text labels
             label19.Visible = true;
             label20.Visible = true;
